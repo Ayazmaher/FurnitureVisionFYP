@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.furniturevision">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logofront"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logofront"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FurnitureVision">
+        <activity
+            android:name=".splash"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FinalConfirmation"
+            android:exported="true" />
+        <activity
+            android:name=".BasicDetail"
+            android:exported="true" />
+        <activity android:name=".Product_detail_activity" />
+        <activity
+            android:name=".navdrawer"
+            android:label="@string/title_activity_navdrawer"
+            android:theme="@style/Theme.FurnitureVision.NoActionBar" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

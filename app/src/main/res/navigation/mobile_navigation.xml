@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/products">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.furniturevision.ui.Mycart.cart"
+        android:label="@string/my_cart"
+        tools:layout="@layout/fragment_mycart" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.furniturevision.ui.Trackorder.TrackOrder"
+        android:label="@string/track_order"
+        tools:layout="@layout/fragment_trackorder" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.furniturevision.ui.orderhistory.Orderhistory"
+        android:label="@string/order_history"
+        tools:layout="@layout/fragment_orderhistory" />
+    <fragment
+        android:id="@+id/products"
+        android:name="com.example.furniturevision.fargment.Products"
+        android:label="@string/Products"
+        tools:layout="@layout/fragment_products" />
+    <fragment
+        android:id="@+id/favourite"
+        android:name="com.example.furniturevision.fargment.favourite"
+        android:label="@string/favourite"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/logout"
+        android:name="com.example.furniturevision.fargment.logout"
+        android:label="@string/Logout"
+        tools:layout="@layout/fragment_logout" />
+</navigation>

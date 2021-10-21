@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:background="#F1EAEA"
+    android:elevation="15dp">
+
+    <ImageView
+        android:id="@+id/cart_img"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/cart_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Computer Wooden Table"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/cart_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cart_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="68dp"
+        android:text=" RS:5600"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/cart_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cart_delete"
+        android:layout_width="30dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="349dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/cart_img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/cancelicoin"
+        />
+
+    <ImageView
+        android:id="@+id/cart_add"
+        android:layout_width="41dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/cart_price"
+        app:layout_constraintTop_toBottomOf="@+id/cart_delete"
+        app:srcCompat="@mipmap/plus" />
+
+    <TextView
+        android:id="@+id/cart_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:text="1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/cart_price"
+        app:layout_constraintTop_toBottomOf="@+id/cart_title" />
+
+    <ImageView
+        android:id="@+id/cart_minus"
+        android:layout_width="43dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/cart_price"
+        app:layout_constraintTop_toBottomOf="@+id/cart_title"
+        app:srcCompat="@mipmap/minus" />
+
+    <TextView
+        android:id="@+id/cart_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:textColor="@color/black"
+        android:text="3 Years Warranty with Delivery Free"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/cart_img"
+        app:layout_constraintTop_toBottomOf="@+id/cart_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

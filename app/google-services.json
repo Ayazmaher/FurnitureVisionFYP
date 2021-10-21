@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "108558483722",
+    "project_id": "furniturevision-ecf30",
+    "storage_bucket": "furniturevision-ecf30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108558483722:android:a1de03d42fc7812855faf3",
+        "android_client_info": {
+          "package_name": "com.example.furniturevision"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108558483722-01eoshpnadjs97lvlb7qsmt0r34lv13i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeohi3GXivuCLJMMMGZHLtLMX-klRpUVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108558483722-01eoshpnadjs97lvlb7qsmt0r34lv13i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

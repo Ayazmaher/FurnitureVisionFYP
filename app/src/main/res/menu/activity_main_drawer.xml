@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/products"
+            android:icon="@drawable/ic_products"
+            android:title="@string/products"
+            android:menuCategory="secondary"
+            />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_add_shopping_cart_24"
+            android:title="@string/my_cart"
+            android:menuCategory="secondary"
+            />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_track"
+            android:title="@string/track_order"
+            android:menuCategory="secondary"
+            />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_history"
+            android:title="@string/order_history"
+            android:menuCategory="secondary"
+            />
+        <item
+            android:id="@+id/favourite"
+            android:icon="@drawable/ic_baseline_favorite_24"
+            android:title="@string/my_favourite"
+            android:menuCategory="secondary"
+            />
+    </group>
+    <item android:title=""
+        android:menuCategory="secondary"
+        >
+
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/logout"
+
+
+                />
+
+        </menu>
+    </item>
+</menu>
