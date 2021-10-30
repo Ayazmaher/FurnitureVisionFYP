@@ -100,25 +100,17 @@ public class cart extends Fragment  {
                             int b = Integer.parseInt(documentSnapshot.get("Product Quantity").toString());
 
 
-
                             cart_item_modelList.add(new Cart_item_model(documentSnapshot.get("Product Image").toString(), documentSnapshot.get("Product title").toString(),a, b, documentSnapshot.get("Product Desc").toString(),documentSnapshot.getId()));
 
                             cart_item_adapter.notifyDataSetChanged();
 
                         }
 
-
-
-
                     } else {
                         Toast.makeText(getContext(), "Some thing Went Wrong", Toast.LENGTH_LONG).show();
                     }
 
                 });
-
-
-
-
 
             }
 

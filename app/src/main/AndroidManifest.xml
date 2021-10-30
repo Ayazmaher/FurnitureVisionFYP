@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.furniturevision">
 
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -13,9 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FurnitureVision">
         <activity
+            android:name=".ArActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="optional" />
+
+        <activity
             android:name=".splash"
-            android:exported="true"
-            >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,9 +43,7 @@
             android:theme="@style/Theme.FurnitureVision.NoActionBar" />
         <activity android:name=".ForgotPassword" />
         <activity android:name=".Register" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

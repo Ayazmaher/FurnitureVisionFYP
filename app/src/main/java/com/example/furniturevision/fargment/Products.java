@@ -62,7 +62,7 @@ public class Products extends Fragment {
                     int price = Integer.parseInt(documentSnapshot.get("Productprice").toString());
 
 
-                 productsModelList.add(new ProductsModel(documentSnapshot.get("Productimage").toString(),documentSnapshot.get("Productname").toString(),price, documentSnapshot.get("Productdesc").toString() ));
+                 productsModelList.add(new ProductsModel(documentSnapshot.get("Productimage").toString(),documentSnapshot.get("Productname").toString(),price, documentSnapshot.get("Productdesc").toString(), documentSnapshot.get("model").toString() ));
                 }
                 productsAdapter.notifyDataSetChanged();
             }

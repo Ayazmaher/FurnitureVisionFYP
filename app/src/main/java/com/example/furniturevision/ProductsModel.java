@@ -8,13 +8,23 @@ public class ProductsModel implements Serializable {
     private String product_title;
     private int product_price;
     private String product_desc;
+    private String model;
 
+    public String getModel() {
+        return model;
+    }
 
-    public ProductsModel(String product_img, String product_title, int product_price, String product_desc) {
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public ProductsModel(String product_img, String product_title, int product_price, String product_desc, String model) {
         this.product_img = product_img;
         this.product_title = product_title;
         this.product_price = product_price;
         this.product_desc = product_desc;
+        this.model= model;
+
     }
 
     public String getProduct_img() {

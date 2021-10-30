@@ -216,7 +216,9 @@ public class Product_detail_activity extends AppCompatActivity {
 
         viewCamera.setOnClickListener(v -> {
             try{
-                startActivity(new Intent(MediaStore.ACTION_IMAGE_CAPTURE));
+                Intent intent = new Intent(this,ArActivity.class);
+                intent.putExtra("model",productsModel.getModel());
+                this.startActivity(intent);
             }
             catch (Exception e)
             {
