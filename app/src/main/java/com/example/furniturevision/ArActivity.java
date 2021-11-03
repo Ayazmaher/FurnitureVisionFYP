@@ -39,7 +39,6 @@ public class ArActivity extends AppCompatActivity implements
 
     private ArFragment arFragment;
     private Renderable model;
-    private ViewRenderable viewRenderable;
     private Boolean isTapped=false;
     private String models;
 
@@ -76,8 +75,8 @@ public class ArActivity extends AppCompatActivity implements
 
     @Override
     public void onSessionConfiguration(Session session, Config config) {
-        if (session.isDepthModeSupported(Config.DepthMode.AUTOMATIC)) {
-            config.setDepthMode(Config.DepthMode.AUTOMATIC);
+        if (session.isDepthModeSupported(Config.DepthMode.RAW_DEPTH_ONLY)) {
+            config.setDepthMode(Config.DepthMode.RAW_DEPTH_ONLY);
         }
     }
 
@@ -122,6 +121,7 @@ public class ArActivity extends AppCompatActivity implements
             Anchor anchor = hitResult.createAnchor();
             AnchorNode anchorNode = new AnchorNode(anchor);
             anchorNode.setParent(arFragment.getArSceneView().getScene());
+            ///////////////
 
             // Create the transformable model and add it to the anchor.
             TransformableNode model = new TransformableNode(arFragment.getTransformationSystem());
@@ -130,12 +130,6 @@ public class ArActivity extends AppCompatActivity implements
                     .animate(true).start();
             model.select();
 
-            Node titleNode = new Node();
-            titleNode.setParent(model);
-            titleNode.setEnabled(false);
-            titleNode.setLocalPosition(new Vector3(0.0f, 1.0f, 0.0f));
-            titleNode.setRenderable(viewRenderable);
-            titleNode.setEnabled(true);
         }
 
     }
