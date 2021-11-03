@@ -12,11 +12,11 @@
 
     <ImageView
         android:id="@+id/cart_img"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="4dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -24,81 +24,82 @@
 
     <TextView
         android:id="@+id/cart_title"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginEnd="36dp"
         android:text="Computer Wooden Table"
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/cart_delete"
         app:layout_constraintStart_toEndOf="@+id/cart_img"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/cart_img" />
 
     <TextView
         android:id="@+id/cart_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="8dp"
         android:text=" RS:5600"
         android:textColor="#000000"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/cart_img"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/cart_title"
+        app:layout_constraintTop_toBottomOf="@+id/cart_title" />
 
     <ImageView
         android:id="@+id/cart_delete"
         android:layout_width="30dp"
         android:layout_height="21dp"
-        android:layout_marginStart="349dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/cart_img"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/cancelicoin"
-        />
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cart_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toEndOf="@+id/cart_title"
+        app:layout_constraintTop_toTopOf="@+id/cart_title"
+        app:srcCompat="@mipmap/cancelicoin" />
 
     <ImageView
         android:id="@+id/cart_add"
         android:layout_width="41dp"
         android:layout_height="26dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toEndOf="@+id/cart_price"
-        app:layout_constraintTop_toBottomOf="@+id/cart_delete"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cart_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cart_price"
         app:srcCompat="@mipmap/plus" />
 
     <TextView
         android:id="@+id/cart_qty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
         android:text="1"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/cart_price"
-        app:layout_constraintTop_toBottomOf="@+id/cart_title" />
+        app:layout_constraintBottom_toBottomOf="@+id/cart_add"
+        app:layout_constraintEnd_toStartOf="@+id/cart_add"
+        app:layout_constraintTop_toTopOf="@+id/cart_add" />
 
     <ImageView
         android:id="@+id/cart_minus"
         android:layout_width="43dp"
         android:layout_height="26dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/cart_price"
-        app:layout_constraintTop_toBottomOf="@+id/cart_title"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cart_qty"
+        app:layout_constraintEnd_toStartOf="@+id/cart_qty"
+        app:layout_constraintTop_toTopOf="@+id/cart_qty"
         app:srcCompat="@mipmap/minus" />
 
     <TextView
         android:id="@+id/cart_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="9dp"
-        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
         android:text="3 Years Warranty with Delivery Free"
+        android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/cart_img"
-        app:layout_constraintTop_toBottomOf="@+id/cart_add" />
+        app:layout_constraintStart_toStartOf="@+id/cart_price"
+        app:layout_constraintTop_toBottomOf="@+id/cart_price" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
